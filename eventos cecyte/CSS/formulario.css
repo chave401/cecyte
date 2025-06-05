@@ -1,0 +1,149 @@
+
+#Encabezado {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0e6d6;
+}
+
+#logotipo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+#cecyte {
+  position: relative;
+  z-index: 2;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.navegacion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: chocolate;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navegacion li {
+  display: inline-block;
+}
+
+.navegacion li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 13px 17px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navegacion li a:hover {
+  background-color: wheat;
+  color: white;
+}
+
+
+#for {
+  background-color: #DEB887;
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  text-align: justify;
+}
+
+
+#vi {
+  margin-top: 20px;
+}
+
+
+#barra {
+  width: 28%;
+   background-color: #C9B29B;
+    padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+#aviso h2 {
+  color: darkred;
+}
+
+#ficha img {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#unete h3 {
+  margin-top: 30px;
+  color: darkgreen;
+}
+
+#video video {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  #for, #barra {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.caja-interna {
+  background-color: #fff4e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  margin: 10px 0;
+  width: 200px;
+}
+
+
+
+#btn2 {
+  padding: 10px 20px;
+  background-color: #c4a484;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}

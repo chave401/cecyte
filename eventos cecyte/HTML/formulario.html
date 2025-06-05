@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Opinión</title>
+  <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+
+ 
+  <header id="Encabezado">
+    <div id="logotipo">
+      <img src="imagenes/Cecyteoimg.png" alt="Logo CECyTE" id="logo">
+    </div>
+    <div id="cecyte">
+      <h2>CECYTE PL 16 MITLA</h2>
+    </div>
+  </header>
+
+ 
+ <ul class="navegacion">
+    <li><a href="index.html"><p id="tex">INICIO</p></a></li>
+    <li><a href="civico.html"><p id="t">CALENDARIO DE EVENTOS CÍVICOS</p></a></li>
+    <li><a href="examenes.html"><p id="e">CALENDARIO DE EXÁMENES</p></a></li>
+    <li><a href="social.html"><p id="x">CALENDARIO DE EVENTOS SOCIALES</p></a></li>
+    <li><a href="Formulario.html"><p id="o">FORMULARIO PARA LOS ALUMNOS</p></a></li>
+  </ul>
+  
+
+
+
+  <div style="display: flex; gap: 20px; margin: 20px; flex-wrap: wrap;">
+  <!-- Contenedor principal del contenido -->
+  <div id="contenedor-contenido" style="display: flex; flex-wrap: wrap; gap: 20px; width: 70%;">
+
+    <!-- Caja 1: Formulario -->
+    <div class="caja-interna" style="flex: 1; background-color: #fff4e0; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); min-width: 400px;">
+      <section id="for">
+        <h2>Formulario de conformidad</h2>
+        <p>¿Qué opinas de la escuela?</p>
+        <form action="formulario" method="post">
+          <label>Nombre:</label><br>
+  <input type="text" name="nombre" id="nom"><br><br>
+
+  <label>Fecha:</label><br>
+  <input type="date" name="fecha"><br><br>
+
+  <h3>Selecciona tu especialidad:</h3>
+  <label><input type="radio" name="especialidad" value="Programación"> Programación</label><br>
+  <label><input type="radio" name="especialidad" value="Hotelería"> Hotelería</label><br><br>
+
+  <h3>Selecciona tus materias favoritas:</h3>
+  <label><input type="checkbox" id="matematicas" value="Pensamiento Matemático"> Pensamiento Matemático</label><br>
+  <label><input type="checkbox" id="ingles" value="Inglés"> Inglés</label><br>
+  <label><input type="checkbox" id="sociales" value="Ciencias Sociales"> Ciencias Sociales</label><br>
+  <label><input type="checkbox" id="humanidades" value="Humanidades"> Humanidades</label><br>
+  <label><input type="checkbox" id="quimica" value="Química"> Química</label><br>
+  <label><input type="checkbox" id="lengua" value="Lengua y Comunicación"> Lengua y Comunicación</label><br>
+  <label><input type="checkbox" id="programacion" value="Programación"> Programación</label><br>
+  <label><input type="checkbox" id="hoteleria" value="Hotelería"> Hotelería</label><br><br>
+
+  <label>Menciona a tu profe favorito:</label><br>
+  <input type="text" id="text"><br><br>
+
+          <h3>Rango de conformidad con las clases:</h3>
+          <input type="range" name="conformidad" min="0" max="100"><br><br>
+
+          <label>Quejas o sugerencias respecto a materias o profesores:</label><br>
+          <textarea name="quejas" rows="10" cols="30"></textarea><br><br>
+
+          <div id="vi">
+            <video width="100%" height="240" controls>
+              <source src="videos/video1.mp4" type="video/mp4">
+              <source src="videos/video1.ogg" type="video/ogg">
+              Tu navegador no soporta este video.
+            </video>
+          </div>
+        </form>
+         
+      </section>
+    </div>
+
+    <div class="caja-vacia" style="flex: 1; min-width: 300px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+     <h1>AQUI TINES TUS RESPUESTAS MAS RELEVANTES </h1>
+     <p id="primero"></p>
+    <p id="segundo"></p>
+    <p id="tercero"></p>
+    <p id="cuarto"></p>
+    <button id="btn2" type="button">mostrar</button>
+    </div>
+  </div>
+
+  <!-- Barra lateral aparte -->
+  <aside id="barra" style="width: 28%; background-color: #C9B29B; padding: 20px; box-sizing: border-box; border-radius: 10px; font-family: 'Georgia', serif; text-align: center;">
+    <div id="aviso">
+      <h2>¡Aviso!</h2>
+      <p>¡Ven por tu ficha para ingresar a la institución!</p>
+      <div id="ficha">
+        <img src="imagenes/fichas.jpg" alt="Promocional" width="200" height="200">
+      </div>
+    </div>
+
+
+    <div id="unete">
+      <h3>ÚNETE A NOSOTROS</h3>
+      <div id="video">
+        <video width="100%" height="240" controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+          <source src="videos/video2.ogg" type="video/ogg">
+          Tu navegador no soporta este video.
+        </video>
+      </div>
+    </div>
+  </aside>
+</div>
+
+  <script type="text/javascript" src="indexJ.js"></script>
+  <script type="text/javascript" src="eventos.js"></script>
+  <script type="text/javascript" src="formularioJ.js"></script>
+
+</body>
+</html>
